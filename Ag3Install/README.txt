@@ -6,3 +6,4 @@ wololo-.bat	// Uninstalls (Notepad++, Obs Studio, Steam, 7-zip, Teamspeak 3, Gya
 
 Mouse.reg	// Disables mouse acceleration (Requires a restart)
 
+Wactivate	// Activates windows (Requires run as administrator)

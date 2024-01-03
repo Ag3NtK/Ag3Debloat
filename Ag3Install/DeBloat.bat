@@ -83,7 +83,7 @@ winget uninstall Microsoft.GetHelp_8wekyb3d8bbwe
 winget uninstall Microsoft.GamingApp_8wekyb3d8bbwe
 
 :: Desinstala Xbox TCUI
-winget uninstall Microsoft.Xbox.TCUI_8wekyb3d8bbwe
+:: winget uninstall Microsoft.Xbox.TCUI_8wekyb3d8bbwe
 
 :: Desinstala Windows Clock
 winget uninstall Microsoft.WindowsAlarms_8wekyb3d8bbwe
