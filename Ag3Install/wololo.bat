@@ -5,6 +5,15 @@ pause
 @echo off
 echo Instalando programas con winget...
 
+:: Instala Hardware Monitor
+winget install CPUID.HWMonitor	
+
+:: Instala Revo uninstaller
+winget install RevoUninstaller.RevoUninstaller
+
+:: Instala NVCleaninstall
+winget install TechPowerUp.NVCleanstall
+
 :: Instala Notepad++
 winget install Notepad++.Notepad++
 
@@ -17,14 +26,8 @@ winget install Valve.Steam
 :: Instala 7-Zip
 winget install 7zip.7zip
 
-:: Instala TeamSpeak 3
-winget install TeamSpeakSystems.TeamSpeakClient --accept-source-agreements
-
 :: Instala Gyazo
 winget install Nota.Gyazo --accept-source-agreements
-
-:: Instala NVCleanstall
-winget install TechPowerUp.NVCleanstall 
 
 echo Instalación completada.
 pause

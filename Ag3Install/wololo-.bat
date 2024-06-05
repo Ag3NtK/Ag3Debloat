@@ -1,6 +1,15 @@
 @echo off
 echo Desinstalando programas con winget...
 
+:: Desinstala Hardware Monitor
+winget uninstall CPUID.HWMonitor	
+
+:: Desinstala Revo uninstaller
+winget uninstall RevoUninstaller.RevoUninstaller
+
+:: Desinstala NVCleaninstall
+winget uninstall TechPowerUp.NVCleanstall
+
 :: Desinstala Notepad++
 winget uninstall Notepad++.Notepad++
 
@@ -13,14 +22,8 @@ winget uninstall Valve.Steam
 :: Desinstala 7-Zip
 winget uninstall 7zip.7zip
 
-:: Desinstala TeamSpeak 3
-winget uninstall TeamSpeakSystems.TeamSpeakClient
-
 :: Desinstala Gyazo
 winget uninstall Nota.Gyazo 
-
-:: Desinstala NVCleanstall
-winget uninstall TechPowerUp.NVCleanstall 
 
 echo Desinstalación completada.
 pause
