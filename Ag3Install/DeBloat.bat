@@ -1,9 +1,6 @@
 @echo off
 echo Desinstalando programas con winget...
 
-:: Desinstala DDU
-winget uninstall Wagnardsoft.DisplayDriverUninstaller 
-
 :: Desinstala Clipchamp
 winget uninstall Clipchamp.Clipchamp_yxz26nhyzhsrt
 
