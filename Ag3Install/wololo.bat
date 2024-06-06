@@ -5,6 +5,9 @@ pause
 @echo off
 echo Instalando programas con winget...
 
+:: Instala CyberGhost
+winget install XPDCH2PGGKQ7T7
+
 :: Instala MSI Afterburner
 winget install --id=Guru3D.Afterburner  -e
 
