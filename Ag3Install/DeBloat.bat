@@ -1,10 +1,13 @@
 @echo off
 echo Desinstalando programas con winget...
 
-:: DesDesinstala Clipchamp
+:: Desinstala DDU
+winget uninstall Wagnardsoft.DisplayDriverUninstaller 
+
+:: Desinstala Clipchamp
 winget uninstall Clipchamp.Clipchamp_yxz26nhyzhsrt
 
-:: DesDesinstala Cortana
+:: Desinstala Cortana
 winget uninstall Microsoft.549981C3F5F10_8wekyb3d8bbwe
 
 :: Desinstala News
