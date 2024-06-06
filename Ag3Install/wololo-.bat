@@ -1,6 +1,9 @@
 @echo off
 echo Desinstalando programas con winget...
 
+:: Desinstala CyberGhost
+winget uninstall XPDCH2PGGKQ7T7
+
 :: Desinstala MSI Afterburner
 winget uninstall --id=Guru3D.Afterburner  -e
 
