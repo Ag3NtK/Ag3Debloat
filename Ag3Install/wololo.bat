@@ -5,6 +5,9 @@ pause
 @echo off
 echo Instalando programas con winget...
 
+:: Instala DDU
+winget install Wagnardsoft.DisplayDriverUninstaller 
+
 :: Instala Hardware Monitor
 winget install CPUID.HWMonitor	
 
