@@ -1,8 +1,8 @@
 DeBloat.bat	// Uninstalls windows preinstalled apps and debloats windows
 
-wololo.bat	// Installs (Notepad++, Obs Studio, Steam, 7-zip, Gyazo, NVCleanstall, Process Lasso)
+wololo.bat	// Installs some basic programs
 
-wololo-.bat	// Uninstalls (Notepad++, Obs Studio, Steam, 7-zip, Gyazo, NVCleanstall, Process Lasso)
+wololo-.bat	// Uninstalls the progrmas from wololo.bat
 
 Mouse.reg	// Disables mouse acceleration (Requires a restart)
 
