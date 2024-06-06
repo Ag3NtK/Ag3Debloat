@@ -1,6 +1,9 @@
 @echo off
 echo Desinstalando programas con winget...
 
+:: Desinstala DDU
+winget uninstall Wagnardsoft.DisplayDriverUninstaller 
+
 :: Desinstala Hardware Monitor
 winget uninstall CPUID.HWMonitor	
 
