@@ -1,6 +1,12 @@
 @echo off
 echo Desinstalando programas con winget...
 
+:: Desinstala MSI Afterburner
+winget uninstall --id=Guru3D.Afterburner  -e
+
+:: Desinstala QuickCPU
+winget uninstall CoderBag.QuickCPUx64
+
 :: Desinstala DDU
 winget uninstall Wagnardsoft.DisplayDriverUninstaller 
 
