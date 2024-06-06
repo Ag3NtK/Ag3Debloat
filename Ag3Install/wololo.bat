@@ -5,6 +5,12 @@ pause
 @echo off
 echo Instalando programas con winget...
 
+:: Instala MSI Afterburner
+winget install --id=Guru3D.Afterburner  -e
+
+:: Instala QuickCPU
+winget install CoderBag.QuickCPUx64
+
 :: Instala DDU
 winget install Wagnardsoft.DisplayDriverUninstaller 
 
