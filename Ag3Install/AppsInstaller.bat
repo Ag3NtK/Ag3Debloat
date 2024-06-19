@@ -1,17 +1,15 @@
-start "" "ms-windows-store://pdp?ocid=pdpshare&hl=en-us&gl=us&productid=9NBLGGH4NNS1&mode=mini&pos=0%2C0%2C1714%2C868&referrer=storeforweb"
-
-pause
-
 @echo off
 setlocal enabledelayedexpansion
 
 :menu
 cls
-echo (CyberGhost, MSI Afterburner, QuickCPU, DDU, Hardware Monitor, Revo uninstaller, NVCleaninstall, Notepad++, OBS Studio, Steam, 7-Zip, Gyazo)
-echo 1. Instalar programas
-echo 2. Desinstalar programas
-echo 3. Salir
-set /p choice=Opcion (1/2/3): 
+echo --------------- Program Manager ---------------
+echo 1. Install Programs
+echo 2. Uninstall Programs
+echo 3. Exit
+echo ----------------------------------------------
+
+set /p choice=Enter your choice (1/2/3): 
 
 if "%choice%"=="1" (
     set action=install
@@ -22,12 +20,17 @@ if "%choice%"=="1" (
 ) else if "%choice%"=="3" (
     goto exit
 ) else (
-    echo Opción no válida. Inténtalo de nuevo.
+    echo Invalid option. Please try again.
+    timeout /t 2 >nul
     goto menu
 )
 
 :start
-echo Procesando programas con winget...
+cls
+echo ---------------- Processing -------------------
+echo Please wait while processing your request...
+
+:: Programs to install or uninstall using winget
 
 :: CyberGhost
 winget !action! XPDCH2PGGKQ7T7
@@ -65,9 +68,13 @@ winget !action! 7zip.7zip
 :: Gyazo
 winget !action! Nota.Gyazo --accept-source-agreements
 
-echo Operación completada.
-pause
+echo ---------------- Operation Completed ----------------
+echo.
+echo Press any key to continue...
+pause >nul
 goto menu
 
 :exit
-echo Saliendo del programa...
+echo Exiting the program...
+timeout /t 2 >nul
+exit
