@@ -6,7 +6,7 @@ pause
 setlocal enabledelayedexpansion
 
 :menu
-echo ¿Qué quieres hacer?
+echo ¿Qué quieres hacer? (CyberGhost, MSI Afterburner, QuickCPU, DDU, Hardware Monitor, Revo uninstaller, NVCleaninstall, Notepad++, OBS Studio, Steam, 7-Zip, Gyazo)
 echo 1. Instalar programas
 echo 2. Desinstalar programas
 echo 3. Salir
