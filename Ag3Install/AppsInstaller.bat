@@ -3,43 +3,70 @@ start "" "ms-windows-store://pdp?ocid=pdpshare&hl=en-us&gl=us&productid=9NBLGGH4
 pause
 
 @echo off
-echo Instalando programas con winget...
+setlocal enabledelayedexpansion
 
-:: Instala CyberGhost
-winget install XPDCH2PGGKQ7T7
+:menu
+echo ¿Qué quieres hacer?
+echo 1. Instalar programas
+echo 2. Desinstalar programas
+echo 3. Salir
+set /p choice=Elige una opción (1/2/3): 
 
-:: Instala MSI Afterburner
-winget install --id=Guru3D.Afterburner  -e
+if "%choice%"=="1" (
+    set action=install
+    goto start
+) else if "%choice%"=="2" (
+    set action=uninstall
+    goto start
+) else if "%choice%"=="3" (
+    goto exit
+) else (
+    echo Opción no válida. Inténtalo de nuevo.
+    goto menu
+)
 
-:: Instala QuickCPU
-winget install CoderBag.QuickCPUx64
+:start
+echo Procesando programas con winget...
 
-:: Instala DDU
-winget install Wagnardsoft.DisplayDriverUninstaller 
+:: CyberGhost
+winget !action! XPDCH2PGGKQ7T7
 
-:: Instala Hardware Monitor
-winget install CPUID.HWMonitor	
+:: MSI Afterburner
+winget !action! --id=Guru3D.Afterburner -e
 
-:: Instala Revo uninstaller
-winget install RevoUninstaller.RevoUninstaller
+:: QuickCPU
+winget !action! CoderBag.QuickCPUx64
 
-:: Instala NVCleaninstall
-winget install TechPowerUp.NVCleanstall
+:: DDU
+winget !action! Wagnardsoft.DisplayDriverUninstaller 
 
-:: Instala Notepad++
-winget install Notepad++.Notepad++
+:: Hardware Monitor
+winget !action! CPUID.HWMonitor	
 
-:: Instala OBS Studio
-winget install OBSProject.OBSStudio
+:: Revo uninstaller
+winget !action! RevoUninstaller.RevoUninstaller
 
-:: Instala Steam
-winget install Valve.Steam
+:: NVCleaninstall
+winget !action! TechPowerUp.NVCleanstall
 
-:: Instala 7-Zip
-winget install 7zip.7zip
+:: Notepad++
+winget !action! Notepad++.Notepad++
 
-:: Instala Gyazo
-winget install Nota.Gyazo --accept-source-agreements
+:: OBS Studio
+winget !action! OBSProject.OBSStudio
 
-echo Instalación completada.
+:: Steam
+winget !action! Valve.Steam
+
+:: 7-Zip
+winget !action! 7zip.7zip
+
+:: Gyazo
+winget !action! Nota.Gyazo --accept-source-agreements
+
+echo Operación completada.
 pause
+goto menu
+
+:exit
+echo Saliendo del programa...
