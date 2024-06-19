@@ -1,8 +1,6 @@
 DeBloat.bat	// Uninstalls windows preinstalled apps and debloats windows
 
-wololo.bat	// Installs some basic programs
-
-wololo-.bat	// Uninstalls the progrmas from wololo.bat
+AppsInstaller // Installs programs i like
 
 Mouse.reg	// Disables mouse acceleration (Requires a restart)
 
