@@ -68,6 +68,9 @@ winget !action! 7zip.7zip
 :: Gyazo
 winget !action! Nota.Gyazo --accept-source-agreements
 
+:: Kicad
+winget !action! KiCad.KiCad 
+
 echo ---------------- Operation Completed ----------------
 echo.
 echo Press any key to continue...
